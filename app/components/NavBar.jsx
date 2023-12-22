@@ -4,38 +4,37 @@ const navItems = [
     {
     label: 'Why Cypress?',
     path: '/',
-    datatest: 'nav-why-cypress'
+    dataTest: 'nav-why-cypress'
     },
     {
     label: 'Overview',
     path: '/overview',
-    datatest: 'overview'
+    dataTest: 'nav-overview'
     },
     {
     label: 'Fundamentals',
     path: '/fundamentals',
-    datatest: 'fundamentals'
+    dataTest: 'nav-fundamentals'
     },
     {
         label: 'Forms',
         path: '/forms',
-        datatest: 'forms'
-
+        dataTest: 'nav-forms'
     },
     {
         label: 'Examples',
         path: '/examples',
-        datatest: 'Examples' 
+        dataTest: 'nav-examples'
     },
     {
         label: 'Component',
         path: '/component',
-        datatest: 'component' 
+        dataTest: 'nav-component' 
     },
     {
         label: 'Best Practices',
         path: '/best-practices',
-        datatest: 'best-practices'
+        dataTest: 'nav-best-practices'
     },
 ]
 
@@ -46,9 +45,10 @@ export default function NavBar(){
                 navItems.map((item)=> (
                     <NavItem 
                     key={item.label} 
-                    label={item.label}
-                     path={item.path}
-                     dataTest={item.dataTest} />
+                    label={item.label} 
+                    path={item.path} 
+                    dataTest={item.dataTest}
+                    />
                 ))
             }
         </ul>
